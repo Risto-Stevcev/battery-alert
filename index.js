@@ -4,12 +4,8 @@ const spawn = require('child_process').spawn
     , acpi  = require('acpiclient')
     , path  = require('path')
 
-const args = (function args() {
-  let idx = process.argv.indexOf(path.resolve(__filename))
-  return process.argv.slice(idx + 1)
-})()
-
-const limit = parseInt(args[0]) || 10
+const args  = process.argv.slice(2)
+    , limit = parseInt(args[0]) || 15
     , cmd   = args.slice(1)
 
 if (!cmd.length)
