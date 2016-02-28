@@ -6,7 +6,7 @@
 
 `Usage: battery-alert [remaining] [command]`
 
-`remaining` - The % battery remaining required to trigger the command (default: 10%)
+`remaining` - The % battery remaining required to trigger the command (default: 10%)  
 `command` - The command to trigger (required)
 
 ```bash
